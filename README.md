@@ -42,20 +42,7 @@ OpenAI API (GPT Response)
 
 ---
 
-# 📂 Project Structure
 
-RAG/
-│
-├── app.py                 # FastAPI backend (RAG logic)
-├── server.js              # Node proxy server
-├── .env                   # OpenAI API key
-├── chroma_persistent_storage/
-├── pdf/                   # PDF documents
-│
-├── chat/                  # Frontend
-│   ├── index.html
-│   ├── style.css
-│   └── main.js
 
 ---
 
@@ -139,14 +126,6 @@ User → Frontend → Node (/chat) → FastAPI → ChromaDB → OpenAI → Respo
 
 ---
 
-# ⚠️ Common Issues
-
-## 422 Error
-Mismatch between request fields:
-- FastAPI expects `query`
-- Node/frontend must match
-
----
 
 ## Empty body issue
 Ensure:
