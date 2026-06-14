@@ -36,5 +36,5 @@ app.post("/chat", async (req, res) => {
 });
 
 app.listen(3000, () => {
-    console.log("Node server running on PORT 3000");
+    console.log("===== Node server running on PORT 3000 ====");
 });
